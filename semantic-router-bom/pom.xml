@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.hemeda3.ai</groupId>
+        <artifactId>semantic-router</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>semantic-router-bom</artifactId>
+    <packaging>pom</packaging>
+
+    <name>Semantic Router AI BOM</name>
+    <description>Bill of Materials POM (BOM) for the Semantic Router AI modules</description>
+
+    <url>https://github.com/hemeda3/semantic-router</url>
+
+    <scm>
+        <url>https://github.com/hemeda3/semantic-router</url>
+        <connection>git://github.com/hemeda3/semantic-router.git</connection>
+        <developerConnection>git@github.com:hemeda3/semantic-router.git</developerConnection>
+    </scm>
+
+    <dependencyManagement>
+        <dependencies>
+
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.ai</groupId>-->
+<!--                <artifactId>semantic-router-core</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+
+<!--            &lt;!&ndash; Document Readers &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.ai</groupId>-->
+<!--                <artifactId>semantic-router-pdf-document-reader</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.ai</groupId>-->
+<!--                <artifactId>semantic-router-tika-document-reader</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+
+<!--            &lt;!&ndash; Models &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>org.springframework.ai</groupId>-->
+<!--                <artifactId>semantic-router-azure-openai</artifactId>-->
+<!--                <version>${project.version}</version>-->
+<!--            </dependency>-->
+
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>
