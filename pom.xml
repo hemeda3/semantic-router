@@ -15,7 +15,10 @@
 	<modules>
 		<module>semantic-router-bom</module>
 		<module>semantic-router-core</module>
+		<module>semantic-router-api</module>
+		<module>semantic-router-spring-boot-autoconfigure</module>
 		<module>semantic-router-docs</module>
+		<module>semantic-router-test</module>
 	</modules>
 
 	<organization>
@@ -347,6 +350,7 @@
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 

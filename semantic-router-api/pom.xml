@@ -7,7 +7,7 @@
         <artifactId>semantic-router</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>semantic-router-core</artifactId>
+    <artifactId>semantic-router-api</artifactId>
     <packaging>jar</packaging>
     <name>Semantic Router AI Core</name>
     <description>Core domain for Semantic Router AI programming</description>
@@ -130,6 +130,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hemeda3.ai</groupId>
+            <artifactId>semantic-router-core</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
         </dependency>
 
     </dependencies>
