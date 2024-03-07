@@ -1,6 +1,6 @@
 # Semantic Router (Java Version)
 
-Semantic Router is a superfast decision-making layer for your Large Language Models (LLMs) and agents. Rather than waiting for slow LLM generations to make tool-use decisions, Semantic Router uses the magic of semantic vector space to make those decisions — routing requests using semantic meaning.
+Semantic Router is a superfast decision-making layer for your Large Language Models (LLMs) and agents based `spring-ai` project . Rather than waiting for slow LLM generations to make tool-use decisions, Semantic Router uses the magic of semantic vector space to make those decisions — routing requests using semantic meaning.
 
 ## Quickstart
 
@@ -57,5 +57,23 @@ System.out.println(decision.getName());
 If a query doesn't match any route, the route layer will return a RouteChoice with a null name.
 
 
+This Java port of Semantic Router is based on the Spring AI project, leveraging the spring-ai-openai-spring-boot-starter dependency for seamless integration with Spring Boot applications. By utilizing the Spring AI framework, the Semantic Router takes advantage of its robust and scalable architecture, making it easier to build and deploy AI-powered applications with the OpenAI API.
+
+
+## from Configuration
+
+```properties
+semantic-router-api.enabled=true
+semantic-router-api.score-threshold=0.75
+semantic-router-api.default-route=fallback
+
+# Define routes as a list of comma-separated values
+semantic-router-api.routes.politics.utterances=isn't politics the best thing ever,why don't you tell me about your political opinions,don't you just love the president,don't you just hate the president,they're going to destroy this country!,they will save the country!
+semantic-router-api.routes.politics.description=A route to avoid or handle political conversations
+
+semantic-router-api.routes.chitchat.utterances=how's the weather today?,how are things going?,lovely weather today,the weather is horrendous,let's go to the chippy
+semantic-router-api.routes.chitchat.description=A route for casual chitchat and small talk
+
+```
 Semantic Router is released under the MIT License. See the LICENSE file for more details.
 

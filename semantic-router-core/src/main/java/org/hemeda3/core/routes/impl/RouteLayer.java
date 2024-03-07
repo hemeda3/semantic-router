@@ -99,15 +99,6 @@ public class RouteLayer {
 	public void setScoreThreshold(double scoreThreshold) {
 		this.scoreThreshold = scoreThreshold;
 	}
-
-	// public double evaluate(List<String> texts, List<String> expectedRoutes) {
-	// long correct = IntStream.range(0, texts.size())
-	// .filter(i -> findBestMatchingRoute(texts.get(i)).map(RouteChoice::getName)
-	// .equals(Optional.ofNullable(expectedRoutes.get(i))))
-	// .count();
-	// return (double) correct / texts.size();
-	// }
-
 	public void deleteRoute(String routeName) {
 		index.delete(routeName);
 		routes.removeIf(route -> route.getName().equals(routeName));
